@@ -1,0 +1,172 @@
+/* Styles généraux */
+body {
+    font-family: 'comic sans ms';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section#content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles spécifiques */
+/* Ajoutez vos styles spécifiques pour chaque page ici */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-bottom: 5px;
+}
+
+.container {
+    background-color:  yellow;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prix-et-ajouter-au-panier {
+    float: right;
+}
+
+.container-in-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* style.css */
+
+.add-to-cart {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #2980b9;
+  }
+  
+  [data-price]::before {
+    content: "Prix : ";
+    font-weight: bold;
+  }
+  
+  [data-price]::after {
+    content: " €";
+  }
+
+/********************************************** page panier ****************************************/
+#charriot {
+    text-decoration: none;
+}
+
+.size80 {
+    width: 80%;
+}
+#titre-panier {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'comic sans ms';
+}
+#blocImage {
+    width: 30%;
+}
+#blockImage > img {
+    width: 100%;
+    height: auto;
+}
+#blocProduit {
+    width: 30%;
+}
+#bloc-change-produit {
+    width: 35%;
+}
+.bouton-moins {
+    border: 1px solid rgba(231, 65, 43, 0.178);
+    background-color: white;
+    color: rgb(231, 65, 43);
+    font-size: xx-large;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+}
+.bouton-plus {
+    border: 1px solid rgba(231, 65, 43, 0.178);
+    background-color: white;
+    color: rgb(231, 65, 43);
+    font-size: xx-large;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+}
+.flex-around {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.produit-quantite {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.267);
+    width: 50px;
+    height: 50px;
+}
